@@ -4,7 +4,6 @@ pipeline {
   stage("test") {
   steps {
  bat 'gradlew test'
-
   }
   steps {
    bat 'gradlew check'
