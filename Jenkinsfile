@@ -5,7 +5,7 @@ pipeline {
   steps {
   bat 'gradlew test'
    cucumber buildStatus: 'UNSTABLE',
-                  reportTitle: 'My report',
+                  reportTitle: 'JenkinsTP',
                   fileIncludePattern: '**/*.json',
                   trendsLimit: 10,
                   classifications: [
