@@ -12,11 +12,6 @@ group 'com.example'
 version '1.0'
 
 sourceCompatibility = 1.8
-cucumberReports {
-    outputDir = file('build/reports/cucumber')
-    buildId = '0'
-    reports = files('reports/example-report.json')
-}
 repositories {
     mavenCentral()
 }
