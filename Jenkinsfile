@@ -4,7 +4,16 @@ pipeline {
   stage("test") {
   steps {
   bat 'gradlew test'
-   cucumber 'reports/*json'
+   cucumber buildStatus: 'UNSTABLE',
+                  reportTitle: 'My report',
+                  fileIncludePattern: '**/*.json',
+                  trendsLimit: 10,
+                  classifications: [
+                      [
+                          'key': 'Browser',
+                          'value': 'Firefox'
+                      ]
+                  ]
   }
 
   }
