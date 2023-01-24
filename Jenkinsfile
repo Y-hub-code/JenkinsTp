@@ -20,6 +20,7 @@ pipeline {
             }
       waitForQualityGate true
  }
+ }
   }
   }
 
