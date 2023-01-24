@@ -18,7 +18,7 @@ pipeline {
             withSonarQubeEnv('sonar') {
               bat './gradlew sonar'
             }
-      waitForQualityGate true
+      waitForQualityGate  abortPipeline:true
  }
  }
   }
