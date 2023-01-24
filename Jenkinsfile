@@ -49,7 +49,7 @@ pipeline {
     
      stage(' deploy Mail Notification') {
       steps {
-        mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'etisalatte1421@gmail.com' ,bcc:'etisalatte1421@gmail.com')
+        mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'jy_bachikh@esi.dz' ,bcc:'jy_bachikh@esi.dz')
       }
     }
       stage('Slack Notification') {
