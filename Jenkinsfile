@@ -9,10 +9,12 @@ pipeline {
                  reportTitle: 'My report',
                  fileIncludePattern: 'target/*.json',
                  trendsLimit: 10
-    
   }
 
   }
+    
+    
+    
   }
   }
 
