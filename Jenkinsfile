@@ -30,7 +30,7 @@ pipeline {
   }
      stage('EMail Test Notification') {
       steps {
-        mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'jy_bachikh@esi.dz' ,bcc:'jy_bachikh@esi.dz')
+        mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'etisalatte1421@gmail.com' ,bcc:'etisalatte1421@gmail.com')
       }
     }
  stage('Code Analysis') {
@@ -60,7 +60,7 @@ pipeline {
  }
      stage(' EMail Code Analysis Notification') {
       steps {
-        mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'jy_bachikh@esi.dz' ,bcc:'jy_bachikh@esi.dz')
+        mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'etisalatte1421@gmail.com' ,bcc:'etisalatte1421@gmail.com')
       }
     }
  stage('Build') {
@@ -91,7 +91,7 @@ pipeline {
  }
      stage('EMail Build Notification') {
       steps {
-        mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'jy_bachikh@esi.dz' ,bcc:'jy_bachikh@esi.dz')
+        mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'etisalatte1421@gmail.com' ,bcc:'etisalatte1421@gmail.com')
       }
     }
     
@@ -120,7 +120,7 @@ pipeline {
   }
      stage(' EMail Deploy Notification') {
       steps {
-        mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'jy_bachikh@esi.dz' ,bcc:'jy_bachikh@esi.dz')
+        mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'etisalatte1421@gmail.com' ,bcc:'etisalatte1421@gmail.com')
       }
     }
     stage(' Signal Notification') {
