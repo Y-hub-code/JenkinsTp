@@ -47,6 +47,18 @@ pipeline {
     }
     
     
+     stage(' deploy Mail Notification') {
+      steps {
+        mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'etisalatte1421@gmail.com' ,bcc:'etisalatte1421@gmail.com')
+      }
+    }
+      stage('Slack Notification') {
+      steps {
+        slackSend(message: 'Slack vous indique que le processus est termine avec succes. ')
+      }
+      }
+    
+    
     
     
   }
