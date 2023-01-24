@@ -42,7 +42,7 @@ pipeline {
     
     stage('Notification') {
       steps {
-        notifyEvents message: 'build success', token: '01234567890123456789012345678901'
+        notifyEvents message: 'build success', token: 'J7PQleEBxcVbQ2nXUywf0ODZ5ch0TnDa'
       }
     }
     
