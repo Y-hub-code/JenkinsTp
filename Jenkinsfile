@@ -31,11 +31,7 @@ pipeline {
     
   }
   }
-     stage('EMail Test Notification') {
-      steps {
-        mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'etisalatte1421@gmail.com' ,bcc:'etisalatte1421@gmail.com')
-      }
-    }
+     
  stage('Code Analysis') {
      post {
         failure {
@@ -61,11 +57,7 @@ pipeline {
       waitForQualityGate  abortPipeline:true
  }
  }
-     stage(' EMail Code Analysis Notification') {
-      steps {
-        mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'etisalatte1421@gmail.com' ,bcc:'etisalatte1421@gmail.com')
-      }
-    }
+     
  stage('Build') {
      post {
         failure {
@@ -92,11 +84,7 @@ pipeline {
      
       }
  }
-     stage('EMail Build Notification') {
-      steps {
-        mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'etisalatte1421@gmail.com' ,bcc:'etisalatte1421@gmail.com')
-      }
-    }
+     
     
   stage('Deploy') {
        post {
