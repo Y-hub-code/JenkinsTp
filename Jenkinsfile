@@ -5,14 +5,14 @@ pipeline {
       post {
         failure {
           script {
-            mail= " test termine avec echec "
+            mail= " test Failed "
           }
 
         }
 
         success {
           script {
-            mail=" test termine avec succes "
+            mail=" test Successful "
           }
 
         }
@@ -28,7 +28,7 @@ pipeline {
     
   }
   }
-     stage('EMail Notification') {
+     stage('EMail Test Notification') {
       steps {
         mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'jy_bachikh@esi.dz' ,bcc:'jy_bachikh@esi.dz')
       }
@@ -37,14 +37,14 @@ pipeline {
      post {
         failure {
           script {
-            mail= " Code Analysis termine avec echec "
+            mail= " Code Analysis Failed "
           }
 
         }
 
         success {
           script {
-            mail=" Code analysis termine avec succes "
+            mail=" Code analysis Successful "
           }
 
         }
@@ -58,7 +58,7 @@ pipeline {
       waitForQualityGate  abortPipeline:true
  }
  }
-     stage(' EMail Notification') {
+     stage(' EMail Code Analysis Notification') {
       steps {
         mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'jy_bachikh@esi.dz' ,bcc:'jy_bachikh@esi.dz')
       }
@@ -67,14 +67,14 @@ pipeline {
      post {
         failure {
           script {
-            mail= " Build termine avec echec "
+            mail= " Build Failed "
           }
 
         }
 
         success {
           script {
-            mail=" Build termine avec succes "
+            mail=" Build Successful "
           }
 
         }
@@ -89,7 +89,7 @@ pipeline {
      
       }
  }
-     stage('EMail Notification') {
+     stage('EMail Build Notification') {
       steps {
         mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'jy_bachikh@esi.dz' ,bcc:'jy_bachikh@esi.dz')
       }
@@ -99,14 +99,14 @@ pipeline {
        post {
         failure {
           script {
-            mail= " Deployement terminé avec échec "
+            mail= " Deployement Failed "
           }
 
         }
 
         success {
           script {
-            mail=" Deployement termine avec succes "
+            mail=" Deployement Successful "
           }
 
         }
@@ -118,7 +118,7 @@ pipeline {
   
   
   }
-     stage(' EMail Notification') {
+     stage(' EMail Deploy Notification') {
       steps {
         mail(subject: 'TPOGL Jenkins notification', body: mail, cc: 'jy_bachikh@esi.dz' ,bcc:'jy_bachikh@esi.dz')
       }
