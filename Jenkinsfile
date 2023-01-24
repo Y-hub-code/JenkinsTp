@@ -131,12 +131,7 @@ pipeline {
       }
     }
     
-      stage('Slack Notification') {
-      steps {
-        slackSend(message: 'Slack vous indique que le processus est termine avec succes. ')
-        
-      }
-      }
+      
     
     
     
