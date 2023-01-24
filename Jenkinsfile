@@ -12,6 +12,7 @@ pipeline {
 
         }
 
+        
         success {
           script {
             mail=" test Successful "
