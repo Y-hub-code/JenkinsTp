@@ -30,6 +30,7 @@ pipeline {
                  fileIncludePattern: 'target/*.json',
                  trendsLimit: 10
     
+    
   }
   }
      
