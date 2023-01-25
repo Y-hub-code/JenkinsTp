@@ -6,6 +6,7 @@ pipeline {
       post {
         failure {
           script {
+            
             mail= " test Failed "
             
           }
