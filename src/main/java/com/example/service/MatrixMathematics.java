@@ -123,12 +123,13 @@ public class MatrixMathematics {
 	}
 
 
-	public  void test () {
+	
 
+
+@Override
+	public int hashCode() {
+		return super.hashCode();
 	}
-
-
-
 
 	
 	
