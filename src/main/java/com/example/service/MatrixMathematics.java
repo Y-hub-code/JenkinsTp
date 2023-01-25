@@ -122,7 +122,7 @@ public class MatrixMathematics {
 	}
 
 
-	public  void test() {
+	public  void test () {
 
 	}
 
